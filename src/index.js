@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Main from './main'
+import './doneer.css';
+import Main from './main';
+import Doneer from './doneer';
 
 ReactDOM.render(
   <React.StrictMode>
-  <Main/>
+  <Doneer/>
   </React.StrictMode>,
   document.getElementById('root')
 );
