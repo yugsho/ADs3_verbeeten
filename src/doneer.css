@@ -1,12 +1,19 @@
-/* doneer card */
+/* font sizes */
+h1{
+  font-size: 1.6vw;
+}
+p{
+  font-size: 1vw;
+}
 
+/* doneer card */
 .doneercardwrap{
   display: flex;
   justify-content: center;
 }
 .doneercard{
   width:35vw;
-  height: 55vh;
+  height: 52vh;
 }
 .doneercardcontent{
   padding:20px;
@@ -17,6 +24,7 @@
   display: flex;
   flex-direction:column;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
 }
 .verderbuttoncolor{
@@ -30,11 +38,10 @@
   margin-left:60%!important;
 }
 .geldbutton{
-  width: 100vw;
+  width: 5vw;
 }
-h1{
-  font-size: 1.6vw;
-}
-p{
-  font-size: 1vw;
+.doneertextfield{
+  width:30vw;
+  margin-top: 0.5vh!important;
+  margin-bottom: 0.5vh!important;
 }

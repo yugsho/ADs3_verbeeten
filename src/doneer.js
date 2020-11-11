@@ -13,7 +13,7 @@ class Doneer extends Component {
     Wij stellen elke donatie enorm op prijs.</p>
 
   <Box className="doneerform">
-    <TextField style={{backgroundColor: "white"}} id="outlined-basic" size="small" label="Kies deelnemer, team of sponsor direct" variant="outlined" />
+    <TextField style={{backgroundColor: "white"}} className="doneertextfield" id="outlined-basic" size="small" label="Kies deelnemer, team of sponsor direct" variant="outlined" />
 
     <ButtonGroup color="primary" aria-label="outlined primary button group">
       <Button style={{backgroundColor: "white"}} className="geldbutton"><a className="geldbuttoncolor">€5</a></Button>
@@ -21,7 +21,7 @@ class Doneer extends Component {
       <Button style={{backgroundColor: "white"}} className="geldbutton"><a className="geldbuttoncolor">€15</a></Button>
     </ButtonGroup>
 
-    <TextField style={{backgroundColor: "white"}} id="outlined-basic" size="small" label="Ander bedrag invullen" variant="outlined" />
+    <TextField style={{backgroundColor: "white"}} className="doneertextfield" id="outlined-basic" size="small" label="Ander bedrag invullen" variant="outlined" />
 
     <Button style={{backgroundColor: "#C93A3C"}} variant="contained" className="verderbutton"><a className="verderbuttoncolor">Ga verder</a></Button>
   </Box>
