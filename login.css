@@ -1,0 +1,16 @@
+.loginForm{
+    background-color: white;
+    width: fit-content;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: auto;  
+}
+
+
+.textField{
+    width: 400px;
+}
+.textFieldHalf{
+    width: 200px;
+}
