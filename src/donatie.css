@@ -1,0 +1,15 @@
+
+.donatieleft{
+  width:60vw;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.donatieright{
+  width:38vw;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
