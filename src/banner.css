@@ -1,0 +1,120 @@
+body{
+  font-family: Helvetica, Helvetica, sans-serif;
+
+}
+
+h1{
+    color: #fffcfc;
+    font-size: large;
+    font-weight: bold;
+}
+
+h3{
+    font-size: large;
+    margin-block-end: 5px;
+    margin-block-start: 5px;
+    font-weight: normal;
+}
+
+p{
+    color: #fffcfc;
+    font-size: small;
+}
+
+
+
+.bannerContent{
+    background-color: #db27338c;
+    text-align: center;
+    z-index: 1; 
+    padding: 10px;
+}
+
+
+.bannerImage{
+    width: 100%;  
+    position: absolute;
+    z-index: -1;
+}
+
+.banner-wrap{
+  position: absolute;
+  overflow: hidden;
+  top: 0px;
+  left: 0px;
+    right: 0px;
+}
+
+.logo{
+    width: 50%;
+}
+
+
+
+/* countdown css */
+
+.base-timer {
+    position: relative;
+    width: 110px;
+    height: 110px;
+  }
+  
+  .base-timer__circle {
+    fill: none;
+    stroke: none;
+  }
+  
+  .base-timer__path-elapsed {
+    stroke-width: 7px;
+    stroke: #fffcfc;
+  }
+  
+  .base-timer__path-remaining {
+    stroke-width: 7px;
+    stroke-linecap: round;
+    transform: rotate(90deg);
+    transform-origin: center;
+    transition: 1s linear all;
+    fill-rule: nonzero;
+    stroke: currentColor;
+  }
+  
+  .base-timer__path-remaining{
+    color: #db2734;
+  }
+  
+  .base-timer__label {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: white;
+  }
+
+.flex-container{
+    display: flex;
+}
+
+.flex-container > div{
+    margin: 10px;
+    
+}
+
+/* Css raised money */
+
+.tussenstand{
+  background-color: #FFD4E0;
+}
+
+.money{
+  background-color: #fffcfc;
+}
+
+.donateContainer{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
