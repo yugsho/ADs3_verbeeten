@@ -1,18 +1,24 @@
 
+/* page layour */
 .donatieleft{
   width:60vw;
   float: left;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left:3vw;
+  padding:10px;
 }
 .donatieright{
-  width:38vw;
+  width:25vw;
   float: right;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-right:3vw;
+  padding:10px;
 }
+
 .text-buttonwrap{
   width:60%;
 }
@@ -21,4 +27,14 @@
 }
 .donatiebuttons{
   width: 100%;
+}
+.donatiebuttoncolor{
+  color:white;
+}
+.steunbutton{
+  color:white;
+  font-size:0.65vw;
+}
+.donatiebloktekst{
+  color:#C93A3C;
 }
