@@ -9,7 +9,7 @@ import Donatie from './donatie';
 
 ReactDOM.render(
   <React.StrictMode>
-  <Donatie/>
+  <Doneer/>
   </React.StrictMode>,
   document.getElementById('root')
 );
