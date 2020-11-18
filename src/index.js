@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import './doneer.css';
 import './donatie.css';
 import './home.css';
 import Main from './main';
@@ -11,7 +10,7 @@ import Home from './home';
 
 ReactDOM.render(
   <React.StrictMode>
-  <Home/>
+  <Doneer/>
   </React.StrictMode>,
   document.getElementById('root')
 );
