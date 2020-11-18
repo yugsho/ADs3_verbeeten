@@ -20,9 +20,9 @@ class Home extends Component {
         <Grid item sm={5}>
           <Card style={{height:"100%", backgroundColor:"#FFF8FA"}}>
             <Box style={{padding:"20px"}}>
-            <h1>Ons doel</h1>
-            <p>Geld voor onderzoek</p>
-            <p> Alle opbrengsten van de Verbeeten Challenge gaan naar het Verbeeten Fonds.
+            <h1 style={{fontSize:"2.2vw"}}>Ons doel</h1>
+            <p style={{fontSize:"1.2vw"}}>Geld voor onderzoek</p>
+            <p style={{fontSize:"1.2vw"}}> Alle opbrengsten van de Verbeeten Challenge gaan naar het Verbeeten Fonds.
             Zij stimuleren onderzoek naar patiëntvriendelijke behandelmethodes door het Instituut Verbeeten, het regionaal kankerbehandelcentrum in Tilburg, Breda en Den Bosch.
             Instituut Verbeeten levert al meer dan 60 jaar zorg op het gebied van radiotherapie en nucleaire geneeskunde.
             Het is echter geen academisch instituut, zij moeten hun specifieke onderzoeken zelf bekostigen.
@@ -43,8 +43,8 @@ class Home extends Component {
       <img style={{width:"65%", height:"65%"}} src={homeimg2} alt="Logo" />
       </Grid>
       <Grid item xs={6}>
-      <h1>John Doe</h1>
-      <p>“Ik was er in 2019 voor de eerste keer.
+      <h1 style={{fontSize:"2.2vw"}}>John Doe</h1>
+      <p style={{fontSize:"1.2vw"}}>“Ik was er in 2019 voor de eerste keer.
       Ik heb echt genoten van het evenement.
       Alles was goed georganiseerd en ik ben er volgend jaar zeker weer bij.”</p>
       </Grid>
