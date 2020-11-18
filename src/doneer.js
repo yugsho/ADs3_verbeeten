@@ -7,7 +7,7 @@ class Doneer extends Component {
   <Box>
 
   <Grid container item xs={12} justify="center">
-  <Grid container item xs={5} direct="column" justify="center">
+  <Grid container item xs={6} direct="column" justify="center">
     <Card style={{backgroundColor: "#FFC2D3", padding:"30px"}}>
       <Grid container item xs={12} justify="center">
         <h1 style={{fontSize:"2vw"}}>DEELNEMER SPONSOREN</h1>

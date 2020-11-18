@@ -114,9 +114,9 @@ class Donatie extends Component {
   <Box className="donatieright" style={{backgroundColor: "#FFC2D3"}} >
 
     <Grid container direction="column" justify="space-between" alignItems="baseline">
-    <h2> Doneren </h2>
+    <h1 style={{fontSize:"2.2vw"}}> Doneren </h1>
 
-    <p> Iedere euro brengt ons dichterbij het doel: kanker effectief bestrijden in eigen regio.
+    <p style={{fontSize:"1.2vw"}}> Iedere euro brengt ons dichterbij het doel: kanker effectief bestrijden in eigen regio.
         Wij schenken de opbrengst aan het Verbeeten Fonds, dat er op toeziet dat het geld optimaar wordt besteed.
         Wij stellen elke donatie enorm op prijs
         Als je klaar bent met betalen, klik niet weg, maar wacht tot je weer terug bent op de Verbeeten Challenge site.
@@ -174,7 +174,7 @@ class Donatie extends Component {
         </Select>
       </FormControl>
 
-    <h1 className="donatiebloktekst">Gegevens</h1>
+    <h1 style={{fontSize:"1.8vw"}} className="donatiebloktekst">Gegevens</h1>
     <TextField className="donatietextfield" style={{backgroundColor: "white", marginBottom:"1vh"}} id="outlined-basic" size="small" label="Naam" variant="outlined"/>
     <TextField className="donatietextfield" style={{backgroundColor: "white", marginBottom:"1vh"}} id="outlined-basic" size="small" label="Bedrijfsnaam" variant="outlined"/>
     <TextField className="donatietextfield" style={{backgroundColor: "white", marginBottom:"1vh"}} id="outlined-basic" size="small" label="E-mailadres" variant="outlined"/>
