@@ -8,13 +8,13 @@ class Doneer extends Component {
 
   <Grid container item xs={12} justify="center">
   <Grid container item xs={6} direct="column" justify="center">
-    <Card style={{backgroundColor: "#FFC2D3", padding:"30px"}}>
+    <Card style={{backgroundColor: "#FFC2D3", padding:"20px"}}>
       <Grid container item xs={12} justify="center">
-        <h1 style={{fontSize:"2vw"}}>DEELNEMER SPONSOREN</h1>
+        <h1 style={{fontSize:"1.8vw"}}>DEELNEMER SPONSOREN</h1>
       </Grid>
 
       <Grid container item xs={12} justify="center">
-      <p style={{fontSize:"1.2vw"}}>Iedere euro brengt ons dichterbij het doel: kanker effectief bestrijden in eigen regio.
+      <p style={{fontSize:"1vw"}}>Iedere euro brengt ons dichterbij het doel: kanker effectief bestrijden in eigen regio.
       Wij schenken de opbrengst aan het Verbeeten Fonds, dat er op toeziet dat het geld optimaal wordt besteed.
       Wij stellen elke donatie enorm op prijs.</p>
       </Grid>

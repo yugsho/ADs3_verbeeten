@@ -4,13 +4,10 @@ import './index.css';
 import './donatie.css';
 import './home.css';
 import Main from './main';
-import Doneer from './doneer';
-import Donatie from './donatie';
-import Home from './home';
 
 ReactDOM.render(
   <React.StrictMode>
-  <Home/>
+  <Main/>
   </React.StrictMode>,
   document.getElementById('root')
 );
