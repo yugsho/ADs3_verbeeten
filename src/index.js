@@ -10,7 +10,7 @@ import Home from './home';
 
 ReactDOM.render(
   <React.StrictMode>
-  <Home/>
+  <Donatie/>
   </React.StrictMode>,
   document.getElementById('root')
 );
