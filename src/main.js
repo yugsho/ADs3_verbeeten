@@ -11,7 +11,6 @@ import Box from "@material-ui/core/Box"
 class Main extends Component {
   render() {
     return (
-  <div>
   <Box position="static">
     <HashRouter>
       <ul className="header">
@@ -24,7 +23,6 @@ class Main extends Component {
       </Box>
       </HashRouter>
   </Box>
-  </div>
     );
   }
 }
