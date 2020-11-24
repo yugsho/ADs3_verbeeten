@@ -12,17 +12,17 @@ class Home extends Component {
     return (
       <Box>
 
-      <Grid item container sm={12} justify="center" alignItems="stretch" spacing={2} style={{marginBottom:"3vh"}}>
+      <Grid item container sm={12} justify="center" alignItems="stretch" spacing={2}>
         <Grid item sm={5}>
-          <img style={{width:"100%", height:"100%"}} src={homeimg} alt="Logo" />
+          <img style={{width:"100%", height:"90%"}} src={homeimg} alt="Logo" />
         </Grid>
 
         <Grid item sm={5}>
-          <Card style={{height:"100%", backgroundColor:"#FFF8FA"}}>
+          <Card style={{height:"90%", backgroundColor:"#FFF8FA"}}>
             <Box style={{padding:"20px"}}>
-            <h1 style={{fontSize:"2.2vw"}}>Ons doel</h1>
-            <p style={{fontSize:"1.2vw"}}>Geld voor onderzoek</p>
-            <p style={{fontSize:"1.2vw"}}> Alle opbrengsten van de Verbeeten Challenge gaan naar het Verbeeten Fonds.
+            <h1 style={{fontSize:"2vw"}}>Ons doel</h1>
+            <p style={{fontSize:"1vw"}}>Geld voor onderzoek</p>
+            <p style={{fontSize:"1vw"}}> Alle opbrengsten van de Verbeeten Challenge gaan naar het Verbeeten Fonds.
             Zij stimuleren onderzoek naar patiëntvriendelijke behandelmethodes door het Instituut Verbeeten, het regionaal kankerbehandelcentrum in Tilburg, Breda en Den Bosch.
             Instituut Verbeeten levert al meer dan 60 jaar zorg op het gebied van radiotherapie en nucleaire geneeskunde.
             Het is echter geen academisch instituut, zij moeten hun specifieke onderzoeken zelf bekostigen.
@@ -43,8 +43,8 @@ class Home extends Component {
       <img style={{width:"65%", height:"65%"}} src={homeimg2} alt="Logo" />
       </Grid>
       <Grid item xs={6}>
-      <h1 style={{fontSize:"2.2vw"}}>John Doe</h1>
-      <p style={{fontSize:"1.2vw"}}>“Ik was er in 2019 voor de eerste keer.
+      <h1 style={{fontSize:"2vw"}}>John Doe</h1>
+      <p style={{fontSize:"1vw"}}>“Ik was er in 2019 voor de eerste keer.
       Ik heb echt genoten van het evenement.
       Alles was goed georganiseerd en ik ben er volgend jaar zeker weer bij.”</p>
       </Grid>

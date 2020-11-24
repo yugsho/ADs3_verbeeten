@@ -162,7 +162,16 @@ class Donatie extends Component {
     </Grid>
 
     <TextField className="donatietextfield" style={{backgroundColor: "white", marginBottom:"1vh"}} id="outlined-basic" size="small" label="Ander bedrag invullen" variant="outlined"/>
-    <TextField className="donatietextfield" style={{backgroundColor: "white", marginBottom:"1vh"}} id="outlined-basic" size="small" label="Kies deelnemer of sponsor direct" variant="outlined"/>
+
+    <FormControl style={{width:"100%"}}>
+        <InputLabel htmlFor="age-native-simple">Kies deelnemer of sponsor direct</InputLabel>
+        <Select native>
+          <option aria-label="None" value="" />
+          <option>Sponsor direct</option>
+          <option>Emma Pulles</option>
+          <option>Patrik van Herp</option>
+        </Select>
+      </FormControl>
 
     <FormControl style={{width:"100%"}}>
         <InputLabel htmlFor="age-native-simple">Selecteer uw bank</InputLabel>
