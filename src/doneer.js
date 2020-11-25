@@ -1,8 +1,19 @@
-import React, { Component } from "react";
+import React from "react";
 import {Box, Card, TextField, Button, ButtonGroup, Grid} from '@material-ui/core';
+import firebase from './firebase';
+import {DoneerInput} from './doneerinput'
+function Doneer(){
+  const [doneer, setDoneer] = React.useState([])
 
-class Doneer extends Component {
-  render() {
+  React.useEffect(() => {
+    const fetchData = async () => {
+      const db = firebase.firestore()
+      const data = await db.collection("doneer").get()
+      setDoneer(data.docs.map(doc => doc.data()))
+    }
+    fetchData()
+  }, [])
+
     return (
   <Box>
 
@@ -20,7 +31,7 @@ class Doneer extends Component {
       </Grid>
 
       <Grid container item xs={12} justify="center">
-        <TextField style={{backgroundColor: "white", width:"100%", marginBottom:"1vh"}} id="outlined-basic" size="small" label="Kies deelnemer, team of sponsor direct" variant="outlined" />
+          <DoneerInput doneer={doneer}/><TextField style={{backgroundColor: "white", width:"100%", marginBottom:"1vh"}} id="outlined-basic" size="small" label="Kies deelnemer, team of sponsor direct" variant="outlined" />
       </Grid>
 
       <Grid container item xs={12} justify="space-between" alignItems="center" style={{marginBottom:"1vh"}}>
@@ -50,7 +61,6 @@ class Doneer extends Component {
 
   </Box>
     );
-  }
 }
 
 export default Doneer;
