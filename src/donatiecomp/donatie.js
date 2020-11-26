@@ -1,13 +1,25 @@
-import React, { Component } from "react";
-import {Box, Card, TextField, Button, ButtonGroup, Grid, FormControlLabel, Checkbox, Typography, FormControl, Select, InputLabel} from '@material-ui/core';
+import React from "react";
+import {Box, Card, TextField, Button, Grid} from '@material-ui/core';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import Person from '@material-ui/icons/Person';
 import People from '@material-ui/icons/People';
 import Euro from '@material-ui/icons/Euro';
 import Favorite from '@material-ui/icons/Favorite'
+import firebase from './../firebase';
+import {DonatieInput} from './donatieinput'
 
-class Donatie extends Component {
-  render() {
+  function Donatie(){
+    const [donatie, setDonatie] = React.useState([])
+
+    React.useEffect(() => {
+      const fetchData = async () => {
+        const db = firebase.firestore()
+        const data = await db.collection("donatie").get()
+        setDonatie(data.docs.map(doc => doc.data()))
+      }
+      fetchData()
+    }, [])
+
     return (
 
 <Box className="donatiewrap">
@@ -161,50 +173,12 @@ class Donatie extends Component {
     <Button style={{backgroundColor: "#C93A3C"}}><a className="donatiebuttoncolor">€15</a></Button>
     </Grid>
 
-    <TextField className="donatietextfield" style={{backgroundColor: "white", marginBottom:"1vh"}} id="outlined-basic" size="small" label="Ander bedrag invullen" variant="outlined"/>
-
-    <FormControl style={{width:"100%"}}>
-        <InputLabel htmlFor="age-native-simple">Kies deelnemer of sponsor direct</InputLabel>
-        <Select native>
-          <option aria-label="None" value="" />
-          <option>Sponsor direct</option>
-          <option>Emma Pulles</option>
-          <option>Patrik van Herp</option>
-        </Select>
-      </FormControl>
-
-    <FormControl style={{width:"100%"}}>
-        <InputLabel htmlFor="age-native-simple">Selecteer uw bank</InputLabel>
-        <Select native>
-          <option aria-label="None" value="" />
-          <option>ING</option>
-          <option>Rabobank</option>
-          <option>ABN Amro</option>
-        </Select>
-      </FormControl>
-
-    <h1 style={{fontSize:"1.8vw"}} className="donatiebloktekst">Gegevens</h1>
-    <TextField className="donatietextfield" style={{backgroundColor: "white", marginBottom:"1vh"}} id="outlined-basic" size="small" label="Naam" variant="outlined"/>
-    <TextField className="donatietextfield" style={{backgroundColor: "white", marginBottom:"1vh"}} id="outlined-basic" size="small" label="Bedrijfsnaam" variant="outlined"/>
-    <TextField className="donatietextfield" style={{backgroundColor: "white", marginBottom:"1vh"}} id="outlined-basic" size="small" label="E-mailadres" variant="outlined"/>
-    <TextField className="donatietextfield" style={{backgroundColor: "white", marginBottom:"1vh"}} id="outlined-basic" size="small" label="Persoonlijk bericht" variant="outlined"/>
-
-    <Grid item xs={12}>
-    <FormControlLabel
-        value="end"
-        control={<Checkbox color="primary" />}
-        labelStyle={{color: '#C93A3C'}}
-        label={<Typography style={{ color: '#C93A3C' }}>Anoniem doneren</Typography>}
-        labelPlacement="end"/>
-    </Grid>
-
-    <Button size="small" style={{backgroundColor: "#C93A3C"}}><a className="donatiebuttoncolor">Doneer</a></Button>
+    <DonatieInput donatie={donatie}/>
 
     </Grid>
   </Box>
 </Box>
     );
   }
-}
 
 export default Donatie;

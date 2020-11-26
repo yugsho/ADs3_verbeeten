@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Donatie from './donatie';
+import Donatie from './donatiecomp/donatie';
 import Home from './home';
 import {
   Route,
