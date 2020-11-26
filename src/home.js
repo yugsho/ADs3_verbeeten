@@ -5,7 +5,7 @@ import Card from "@material-ui/core/Card";
 import Button from "@material-ui/core/Button";
 import homeimg from './pictures/homeimg.png';
 import homeimg2 from './pictures/homeimg2.png';
-import Doneer from './doneer';
+import Doneer from './doneercomp/doneer';
 
 class Home extends Component {
   render() {
