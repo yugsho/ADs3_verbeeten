@@ -9,6 +9,7 @@ export const DoneerInput = ({ doneer }) => {
   const onUpdate = () => {
     const db = firebase.firestore()
     db.collection('doneer').add({deelnemer, bedrag})
+    window.alert("Bedankt voor uw donatie!")
   }
 
     return (

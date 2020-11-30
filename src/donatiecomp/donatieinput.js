@@ -14,6 +14,7 @@ export const DonatieInput = ({ donatie }) => {
   const onUpdate = () => {
     const db = firebase.firestore()
     db.collection('donatie').add({bedrag, deelnemer, bank, naam, email, persbericht, anoniem})
+    window.alert("Bedankt voor uw donatie!")
   }
 
   return (
