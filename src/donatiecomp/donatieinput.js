@@ -2,6 +2,7 @@ import React from 'react';
 import firebase from './../firebase';
 import {TextField, Button, Grid, FormControlLabel, Checkbox, Typography, FormControl, Select, InputLabel} from '@material-ui/core';
 
+//creates const
 export const DonatieInput = ({ donatie }) => {
   const [bedrag, setBedrag] = React.useState(donatie.bedrag);
   const [deelnemer, setDeelnemer] = React.useState(donatie.deelnemer);
@@ -11,12 +12,14 @@ export const DonatieInput = ({ donatie }) => {
   const [persbericht, setPersbericht] = React.useState(donatie.persbericht);
   const [anoniem, setAnoniem] = React.useState(donatie.anoniem);
 
+  //creates function to add things into the database
   const onUpdate = () => {
     const db = firebase.firestore()
     db.collection('donatie').add({bedrag, deelnemer, bank, naam, email, persbericht, anoniem})
     window.alert("Bedankt voor uw donatie!")
   }
 
+  //form for the input fields that goes into the database
   return (
     <>
     <TextField className="donatietextfield" style={{backgroundColor: "white", marginBottom:"1vh"}} id="outlined-basic" size="small" label="Ander bedrag invullen" variant="outlined"
