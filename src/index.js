@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import './donatiecomp/donatie.css';
-import './home.css';
 import Main from './main';
 
 ReactDOM.render(

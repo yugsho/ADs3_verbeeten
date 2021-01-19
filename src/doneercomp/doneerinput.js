@@ -2,16 +2,19 @@ import React from 'react';
 import firebase from './../firebase';
 import {TextField, Button, Grid, FormControl, Select, InputLabel} from '@material-ui/core';
 
+//creates const
 export const DoneerInput = ({ doneer }) => {
   const [deelnemer, setDeelnemer] = React.useState(doneer.deelnemer);
   const [bedrag, setBedrag] = React.useState(doneer.bedrag);
 
+  //creates function to add things into the database
   const onUpdate = () => {
     const db = firebase.firestore()
     db.collection('doneer').add({deelnemer, bedrag})
     window.alert("Bedankt voor uw donatie!")
   }
 
+   //form for the input fields that goes into the database
     return (
       <>
       <Grid container item xs={12} justify="center">

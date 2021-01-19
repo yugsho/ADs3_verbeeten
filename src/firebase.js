@@ -1,6 +1,6 @@
 import firebase from 'firebase'
 
-// Your web app's Firebase configuration
+// Firebase configuration
  const config = {
    apiKey: "AIzaSyBk6zfstIMNhd48H-q5GaZoCIfsF4FxLK4",
    authDomain: "ads3verbeeten.firebaseapp.com",

@@ -11,6 +11,7 @@ import Box from "@material-ui/core/Box"
 class Main extends Component {
   render() {
     return (
+      //navigation
   <div>
   <Box position="static">
     <HashRouter>

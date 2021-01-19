@@ -20,6 +20,7 @@ import {DonatieInput} from './donatieinput'
       fetchData()
     }, [])
 
+    //donation form
     return (
 
 <Box className="donatiewrap">
